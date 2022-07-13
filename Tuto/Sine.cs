@@ -7,7 +7,7 @@ namespace Tuto
     class Sine : IOperation
     {
         private double val;
-        public double Value { get; }
+        public double Value { get { return val; } }
         public double Execute()
         {
             return Math.Sin(Value);
